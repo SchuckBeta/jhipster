@@ -40,5 +40,9 @@ DB（Mysql）
 
 > java -jar target/*.war 后端启动 （Spring boot）
 
-
-
+## 踩过的坑
+~~~
+1、安装时 phantomjs-2.1.1-windows.zip 下载慢或无法下载
+2、npm start 启动报错，解决方式是安装 yarn-1.0.1.msi
+3、yarn 启动端口冲突，执行yarn install后，使用yarn start --port=9001启动 （src\main\docker\sonar.yml 和 webpack\webpack.dev.js）文件中端口9000冲突
+~~~
